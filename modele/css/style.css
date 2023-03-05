@@ -1,0 +1,18 @@
+body{
+    background-color: grey;
+    width: 600px;
+    margin: auto;
+    border: 3px solid #4287f5;
+}
+
+.imgidle{
+    text-align: center;
+}
+/* Permet de retourner les joueurs et de faire face à l'ennemi */
+.idleguerrier{
+    transform:scaleX(-1);
+}
+
+.frappedesarmer{
+    transform:scaleX(-1);
+}

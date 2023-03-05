@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Combat de RPG</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>    
+    <body>
+        <div class="Nomdespersonnages">
+            <table>
+                <tr>
+                    <td>
+                        Vous
+                    </td>
+                    <td id="nomdumonstre">
+                        Le monstre
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="Vie des personnages">
+            <table>
+                <tr>
+                    <td id="viejoueur">
+                        Votre vie
+                    </td>
+                    <td id="viemonstre">
+                        Vie du monstre
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="Vie des personnages">
+            <table>
+                <tr>
+                    <td>
+                        <button id="nouveaumonstre">Nouveau monstre</button>
+                    </td>
+                    <td>
+                        <button id="attaquer">Attaquer</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class = "Stat personnages">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Niveau
+                        <p id="niveaustatjoueur"></p>
+                        </h1>
+                    </td>
+                    <td>
+                        <h1>Niveau de l'ennemi
+                        <p id="niveaustatennemi"></p>
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Exp
+                            <!-- Faire une progress bar -->
+                        <progress id="expstatjoueur" max="100" value=""></progress>
+                        </h1>
+                    </td>
+                    <td>
+                        <h1>
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Attaque
+                        <p id="attaquestatjoueur"></p>
+                        </h1>
+                    </td>
+                    <td>
+                        <h1>Attaque Ennemi
+                        <p id="attaquestatennemi"></p>
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Defense
+                        <p id="defensestatjoueur"></p>
+                        </h1>
+                    </td>
+                    <td>
+                        <h1>Defense Ennemi
+                        <p id="defensestatennemi"></p>
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Vitesse Attaque
+                        <p id="vitesseattaquestatjoueur"></p>
+                        </h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr class="imgidle">
+                    <td><p>idle</p>
+            <img class="idleguerrier" src="image/Chevalier_Male/idle_1.png">
+            <img class="idleguerrier" src="image/Chevalier_Male/idle_2.png">
+            <img class="idleguerrier" src="image/Chevalier_Male/idle_3.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed_1.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed_2.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed_3.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed2_1.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed2_2.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed2_3.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed3_1.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed3_2.png">
+            <img class="frappedesarmer" style="display:block" src="image/Chevalier_Male/attackUnarmed3_3.png">
+                    </td>
+                    <td><p>idle</p>
+            <img class="idleguerrierfemme" src="image/Chevalier_Female/idle_1.png">
+            <img class="idleguerrierfemme" src="image/Chevalier_Female/idle_2.png">
+            <img class="idleguerrierfemme" src="image/Chevalier_Female/idle_3.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Choix d'action du joueur</p>
+                        <button id="boutonfrappedesarmer">Frappe desarmer</button>
+                    </td>
+                </tr>
+                       
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+    <script src="js/Main.js"> </script>
+    <script src="js/ChevalierMale.js"></script>
+    <script src="js/ChevalierFemale.js"></script>
+    </body>
+</html>
